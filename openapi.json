@@ -1,0 +1,65 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Whatsapp Number Validator3",
+    "version": "1.0.0",
+    "description": "RapidAPI: finestoreuk/whatsapp-number-validator3"
+  },
+  "servers": [
+    {
+      "url": "https://whatsapp-number-validator3.p.rapidapi.com"
+    }
+  ],
+  "paths": {
+    "/WhatsappNumberHasItWithToken": {
+      "post": {
+        "summary": "Single validation",
+        "description": "Checks if a given number is registered on WhatsApp.",
+        "operationId": "single_validation",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WhatsappNumberHasItBulkWithToken": {
+      "post": {
+        "summary": "Bulk validation (10)",
+        "description": "Checks if the numbers in given list are registered on WhatsApp.",
+        "operationId": "bulk_validation_(10)",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-RapidAPI-Key"
+      }
+    }
+  },
+  "security": [
+    {
+      "ApiAuth": []
+    }
+  ]
+}

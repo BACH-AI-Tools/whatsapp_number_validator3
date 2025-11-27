@@ -30,7 +30,7 @@ Visit **[EMCP Platform](https://sit-emcp.kaleido.guru)** now to start your MCP j
 
 ## Introduction
 
-This is an automatically generated MCP server using [FastMCP](https://fastmcp.wiki) for accessing the Whatsapp Number Validator3 API.
+This is an MCP server for accessing the Whatsapp Number Validator3 API.
 
 - **PyPI Package**: `bach-whatsapp_number_validator3`
 - **Version**: 1.0.0
@@ -107,8 +107,8 @@ export API_KEY="your_api_key_here"
 {
   "mcpServers": {
     "whatsapp_number_validator3": {
-      "command": "python",
-      "args": ["E:\path\to\whatsapp_number_validator3\server.py"],
+      "command": "uvx",
+      "args": ["--from", "bach-whatsapp_number_validator3", "bach_whatsapp_number_validator3"],
       "env": {
         "API_KEY": "your_api_key_here"
       }
