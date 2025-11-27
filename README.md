@@ -33,7 +33,7 @@
 这是一个 MCP 服务器，用于访问 Whatsapp Number Validator3 API。
 
 - **PyPI 包名**: `bach-whatsapp_number_validator3`
-- **版本**: 1.0.0
+- **版本**: 2.0.0
 - **传输协议**: stdio
 
 
@@ -157,4 +157,4 @@ Checks if the numbers in given list are registered on WhatsApp.
 
 此服务器由 [API-to-MCP](https://github.com/BACH-AI-Tools/api-to-mcp) 工具自动生成。
 
-版本: 1.0.0
+版本: 2.0.0
